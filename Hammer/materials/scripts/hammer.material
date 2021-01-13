@@ -1,0 +1,14 @@
+material hamMat/Diffuse
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture hammer.png
+			}
+		}
+	}
+}

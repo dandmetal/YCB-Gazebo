@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="banana">
+	<static>false</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Banana/meshes/banana.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Banana/meshes/banana.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+        <script>
+        <uri>model://Banana/materials/scripts</uri>
+        <uri>model://Banana/materials/textures</uri>
+        <name>banaMat/Diffuse</name>
+        </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

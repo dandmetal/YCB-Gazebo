@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="tomato">
+	<static>false</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Bleach/meshes/bleach.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Bleach/meshes/bleach.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+        <script>
+        <uri>model://Bleach/materials/scripts</uri>
+        <uri>model://Bleach/materials/textures</uri>
+        <name>bleachMat/Diffuse</name>
+        </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

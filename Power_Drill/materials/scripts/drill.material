@@ -1,0 +1,14 @@
+material drillMat/Diffuse
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture drill.png
+			}
+		}
+	}
+}

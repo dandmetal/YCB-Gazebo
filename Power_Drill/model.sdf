@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="power_drill">
+	<static>false</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Power_Drill/meshes/drill.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Power_Drill/meshes/drill.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+        <script>
+        <uri>model://Power_Drill/materials/scripts</uri>
+        <uri>model://Power_Drill/materials/textures</uri>
+        <name>drillMat/Diffuse</name>
+        </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

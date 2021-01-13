@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="tomato">
+	<static>false</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Tomato/meshes/tomato.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Tomato/meshes/tomato.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+        <script>
+        <uri>model://Tomato/materials/scripts</uri>
+        <uri>model://Tomato/materials/textures</uri>
+        <name>tomaMat/Diffuse</name>
+        </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
